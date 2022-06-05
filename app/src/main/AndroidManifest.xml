@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.admin.stocked">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <application
+        android:allowBackup="true"
+        android:screenOrientation="portrait"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".changeCurrency"/>
+        <activity android:name=".deleteAccountActivity" />
+        <activity android:name=".changeMailActivity" />
+        <activity android:name=".changePasswordActivity" />
+        <activity android:name=".changeNameActivity" />
+        <activity android:name=".EditTransactionActivity" />
+        <activity android:name=".addTransaction" />
+        <activity android:name=".ItemDetails" />
+        <activity android:name=".EditCategoryActivity" />
+        <activity android:name=".ConfigurationActivity" />
+        <activity android:name=".ScanCodeActivitysearch" />
+        <activity android:name=".ScanCodeActivity" />
+        <activity android:name=".scanItemsActivity" />
+        <activity android:name=".additemActivity" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".activity_dashboard" />
+        <activity android:name=".CategoriesActivity" />
+        <activity android:name=".addcategoriesActivity" />
+        <activity android:name=".AddselectorActivity" />
+        <activity android:name=".ItemsActivity" />
+        <activity android:name=".EditItemActivity" />
+        <activity android:name=".ScanCodeActivityEdit"/>
+        <activity
+            android:name=".SplashsActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

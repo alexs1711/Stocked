@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RegisterActivity"
+    tools:ignore="MissingClass">
+
+
+    <TextView
+        android:id="@+id/UpdateItemTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:fontFamily="@font/montserrat"
+        android:text="@string/update_top"
+        android:textColor="#C1000000"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textView10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/deleteItem"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/ic_icon_trash"
+        android:text="@null"
+        app:layout_constraintBottom_toBottomOf="@+id/UpdateItemTop"
+        app:layout_constraintDimensionRatio=".9"
+        app:layout_constraintEnd_toStartOf="@+id/guideline1"
+        app:layout_constraintStart_toStartOf="@+id/guideline50"
+        app:layout_constraintTop_toTopOf="@+id/UpdateItemTop" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+
+        android:fontFamily="@font/montserrat"
+        android:text="@string/item_name"
+        android:textColor="#827474"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/UpdateItemName"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/UpdateItemTop" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+
+        android:layout_marginStart="4dp"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/item_description"
+        android:textColor="#827474"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/UpdateItemDescription"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/UpdateItemName" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView4"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+
+        android:fontFamily="@font/montserrat"
+        android:text="@string/item_unity_kg_unity_liters_pounds"
+        android:textColor="#827474"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/UpdateItemUnits"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/UpdateItemDescription" />
+
+    <EditText
+        android:id="@+id/UpdateItemUnits"
+        android:layout_width="0dp"
+        android:layout_height="30sp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/namebg"
+        android:ems="15"
+        android:fontFamily="@font/montserrat"
+        android:hint="@string/unity"
+        android:inputType="textPersonName"
+        android:paddingStart="10sp"
+        android:paddingEnd="10sp"
+        android:textColor="#000000"
+        android:textColorHint="#77000000"
+        android:textColorLink="#000000"
+        android:textCursorDrawable="@null"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView13"
+        app:layout_constraintEnd_toStartOf="@+id/guideline1"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/category"
+        android:textColor="#827474"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/textView13"
+        app:layout_constraintStart_toStartOf="@+id/guideline13"
+        app:layout_constraintTop_toTopOf="@+id/textView13" />
+
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+
+        android:fontFamily="@font/montserrat"
+        android:text="@string/item_image"
+        android:textColor="#827474"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/image_upload_pic"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/UpdateItemUnits" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/image_upload_pic"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="5dp"
+        android:src="@drawable/cameraicon"
+        app:civ_border_color="#707070"
+        app:civ_border_width="2dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView6"
+        app:layout_constraintDimensionRatio="1"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/textView13"
+        app:layout_constraintVertical_bias="0.646" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView5"
+        android:layout_alignParentStart="true"
+
+        android:fontFamily="@font/montserrat"
+        android:text="@string/item_barcode"
+        android:textColor="#827474"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/buttonscan"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/image_upload_pic" />
+
+    <EditText
+        android:id="@+id/UpdateItemBarCode"
+        android:layout_width="0dp"
+        android:layout_height="30sp"
+        android:layout_alignBottom="@+id/UpdateItemUnits"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/namebg"
+        android:ems="15"
+        android:fontFamily="@font/montserrat"
+        android:hint="@string/bar_qr_code_number"
+        android:inputType="textPersonName"
+        android:paddingStart="10sp"
+        android:textColor="#000000"
+        android:textColorHint="#77000000"
+        android:textColorLink="#000000"
+        android:textCursorDrawable="@null"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonscan"
+        app:layout_constraintEnd_toStartOf="@+id/guideline1"
+        app:layout_constraintStart_toEndOf="@+id/buttonscan"
+        app:layout_constraintTop_toTopOf="@+id/buttonscan" />
+
+    <Button
+        android:id="@+id/buttonscan"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignBottom="@+id/UpdateItemBarCode"
+        android:layout_centerHorizontal="true"
+
+        android:background="@drawable/ic_barcode"
+
+        app:layout_constraintBottom_toTopOf="@+id/UpdateItem"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <EditText
+        android:id="@+id/UpdateItemDescription"
+        android:layout_width="0dp"
+        android:layout_height="80sp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/namebg"
+        android:ems="15"
+        android:fontFamily="@font/montserrat"
+        android:hint="@string/description"
+        android:inputType="textMultiLine"
+        android:lines="3"
+        android:maxLength="255"
+        android:maxLines="3"
+        android:paddingStart="10sp"
+        android:paddingTop="10sp"
+        android:paddingEnd="10sp"
+        android:paddingBottom="10sp"
+        android:textColor="#000000"
+        android:textColorHint="#77000000"
+        android:textColorLink="#000000"
+        android:textCursorDrawable="@null"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView5"
+        app:layout_constraintEnd_toStartOf="@+id/guideline1"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+    <EditText
+        android:id="@+id/UpdateItemName"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/namebg"
+        android:ems="15"
+        android:fontFamily="@font/montserrat"
+        android:hint="@string/name"
+        android:inputType="textPersonName"
+        android:paddingStart="10sp"
+        android:paddingEnd="10sp"
+        android:textColor="#000000"
+        android:textColorHint="#77000000"
+        android:textColorLink="#000000"
+        android:textCursorDrawable="@null"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView7"
+        app:layout_constraintEnd_toStartOf="@+id/guideline1"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+    <Button
+        android:id="@+id/UpdateItem"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/ic_update_button"
+        android:fontFamily="@font/ebrima"
+        android:text="@string/update"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="17sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toTopOf="@+id/guideline53"
+        app:layout_constraintEnd_toStartOf="@+id/guideline1"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="@+id/guideline55"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/exitEditItem"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/ic_rect_ngulo_141"
+        android:fontFamily="@font/ebrima"
+        android:text="@string/cancel"
+        android:textAllCaps="false"
+        android:textColor="#0FB119"
+        android:textSize="17sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="@+id/guideline54" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.07" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.92" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.019151846" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.08" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5523114" />
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:background="@drawable/namebg"
+        android:fontFamily="@font/montserrat"
+        android:hint=""
+        android:textColor="#000000"
+        android:textColorHint="#77000000"
+        android:textColorLink="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/image_upload_pic"
+
+        app:layout_constraintEnd_toStartOf="@+id/guideline1"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline13"
+        app:layout_constraintTop_toTopOf="@+id/image_upload_pic" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.80" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline53"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.8891929" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline54"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.9124487" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline55"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.8235294" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline56"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.97811216" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline50"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.87
+" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

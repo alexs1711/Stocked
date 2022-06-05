@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34">
+  <g id="arrow_down" transform="translate(8 25) rotate(-90)">
+    <circle id="Elipse_85" data-name="Elipse 85" cx="17" cy="17" r="17" transform="translate(25 -8) rotate(90)" fill="#cecece"/>
+    <path id="icon-arrow-left" d="M9.194,17.2,8.4,17.99a.854.854,0,0,1-1.211,0L.248,11.052a.854.854,0,0,1,0-1.211L7.19,2.9A.854.854,0,0,1,8.4,2.9l.793.793a.858.858,0,0,1-.014,1.225l-4.3,4.1H15.139A.855.855,0,0,1,16,9.873v1.143a.855.855,0,0,1-.857.857H4.876l4.3,4.1A.852.852,0,0,1,9.194,17.2Z" transform="translate(0.004 -1.445)" fill="#fff"/>
+  </g>
+</svg>

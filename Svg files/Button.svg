@@ -1,0 +1,9 @@
+<svg id="Button" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+  <rect id="Rectángulo_430" data-name="Rectángulo 430" width="40" height="40" rx="10" fill="#f5f5f7"/>
+  <g id="Icons_Chevron_ic-chevron-right" data-name="Icons / Chevron / ic-chevron-right" transform="translate(8 8)">
+    <rect id="Rectángulo_423" data-name="Rectángulo 423" width="24" height="24" fill="none"/>
+    <g id="ic-chevron-right" transform="translate(0 -0.02)">
+      <path id="Trazado_56" data-name="Trazado 56" d="M9.8,16.78l4.11-4.11a1,1,0,0,0,0-1.41l-4-4" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="bevel" stroke-width="1.5"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "937449417850",
+    "firebase_url": "https://stocked-386cc-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "stocked-386cc",
+    "storage_bucket": "stocked-386cc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:937449417850:android:36158d6600df7421e9dfc3",
+        "android_client_info": {
+          "package_name": "com.example.admin.stocked"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "937449417850-1sr8uenemm428ilgru164h2d0p15nbvl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyADsMzOBk6fl_R5uDF3onlYXYWVB-DgmFk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "937449417850-1sr8uenemm428ilgru164h2d0p15nbvl.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "937449417850-9oi6ocl88lh237tt0faoqjehua4dc9kj.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.admin.stocked"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

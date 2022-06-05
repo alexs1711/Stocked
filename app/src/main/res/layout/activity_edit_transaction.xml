@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".addTransaction">
+
+    <TextView
+        android:id="@+id/Date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/ebrima"
+        android:text="@string/date"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/addTransactionButton"
+        app:layout_constraintEnd_toStartOf="@+id/guideline40"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView19" />
+
+    <Button
+        android:id="@+id/deleteTransaction"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/ic_icon_trash"
+        android:text="@null"
+        app:layout_constraintBottom_toBottomOf="@+id/textView20"
+        app:layout_constraintDimensionRatio=".9"
+        app:layout_constraintEnd_toStartOf="@+id/guideline41"
+        app:layout_constraintStart_toStartOf="@+id/guideline42"
+        app:layout_constraintTop_toTopOf="@+id/textView20" />
+
+    <TextView
+        android:id="@+id/editDate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_rect_ngulo_137"
+        android:clickable="true"
+        android:ems="8"
+        android:focusable="true"
+        android:gravity="center_horizontal|center_vertical"
+        android:maxLines="1"
+        android:paddingStart="10sp"
+        android:paddingEnd="10sp"
+        android:textColor="#000000"
+        android:textColorLink="#000000"
+
+        android:textCursorDrawable="@null"
+        app:layout_constraintBottom_toBottomOf="@+id/Date"
+        app:layout_constraintEnd_toStartOf="@+id/guideline41"
+        app:layout_constraintStart_toStartOf="@+id/guideline40"
+        app:layout_constraintTop_toTopOf="@+id/Date" />
+
+    <TextView
+        android:id="@+id/priceEditBackground"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_rect_ngulo_137"
+        android:ems="8"
+        android:inputType="none"
+        android:paddingStart="10sp"
+        android:textColor="#000000"
+        android:textColorLink="#000000"
+        android:textCursorDrawable="@null"
+        app:layout_constraintBottom_toBottomOf="@+id/textView17"
+        app:layout_constraintEnd_toStartOf="@+id/guideline41"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline40"
+        app:layout_constraintTop_toTopOf="@+id/textView17"
+        app:layout_constraintVertical_bias="0.428" />
+
+    <EditText
+        android:id="@+id/priceEdit"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@null"
+        android:ems="8"
+        android:inputType="numberDecimal"
+        android:paddingStart="10sp"
+        android:paddingEnd="10sp"
+        android:textColor="#000000"
+        android:textColorLink="#000000"
+        android:textCursorDrawable="@null"
+        app:layout_constraintBottom_toBottomOf="@+id/priceEditBackground"
+        app:layout_constraintEnd_toStartOf="@+id/textView22"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline40"
+        app:layout_constraintTop_toTopOf="@+id/priceEditBackground"
+        app:layout_constraintVertical_bias="0.428" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:maxLength="12"
+        android:text="EUR"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/priceEditBackground"
+        app:layout_constraintEnd_toEndOf="@+id/priceEditBackground"
+        app:layout_constraintTop_toTopOf="@+id/priceEditBackground" />
+
+    <TextView
+        android:id="@+id/QuantityEditBackground"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_rect_ngulo_137"
+        android:ems="8"
+        android:inputType="none"
+        android:paddingStart="10sp"
+        android:textCursorDrawable="@null"
+        app:layout_constraintBottom_toBottomOf="@+id/textView19"
+        app:layout_constraintEnd_toStartOf="@+id/guideline41"
+        app:layout_constraintStart_toStartOf="@+id/priceEdit"
+        app:layout_constraintTop_toTopOf="@+id/textView19" />
+
+    <EditText
+        android:id="@+id/QuantityEdit"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@null"
+        android:ems="8"
+        android:inputType="numberDecimal"
+        android:paddingStart="10sp"
+        android:paddingEnd="10sp"
+        android:textCursorDrawable="@null"
+        app:layout_constraintBottom_toBottomOf="@+id/QuantityEditBackground"
+        app:layout_constraintEnd_toStartOf="@+id/QuantityUnity"
+        app:layout_constraintStart_toStartOf="@+id/guideline40"
+        app:layout_constraintTop_toTopOf="@+id/QuantityEditBackground" />
+
+    <TextView
+        android:id="@+id/QuantityUnity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:maxLength="12"
+        android:text="KG"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="@+id/QuantityEditBackground"
+        app:layout_constraintEnd_toStartOf="@+id/guideline41"
+        app:layout_constraintTop_toTopOf="@+id/QuantityEditBackground" />
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/ebrima"
+        android:text="@string/edit_transaction"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline37"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline37"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.16" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline38"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.8" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline39"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/guideline36"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline35"
+        app:layout_constraintVertical_bias="0.26">
+
+        <RadioButton
+            android:id="@+id/Leaving"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20sp"
+            android:layout_marginRight="20sp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_xml_leaving_green"
+            android:button="@android:color/transparent"
+            android:checked="true"
+            android:fontFamily="@font/ebrima"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="@string/nleaving"
+            android:textAlignment="center"
+            android:textColor="@drawable/selector_xml_leaving_text_green"
+            android:textSize="17sp"
+            android:typeface="normal"
+            tools:layout_editor_absoluteX="237dp"
+            tools:layout_editor_absoluteY="398dp" />
+
+        <RadioButton
+            android:id="@+id/Entering"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20sp"
+
+            android:layout_marginRight="20sp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_xml_entering_green"
+            android:button="@android:color/transparent"
+            android:fontFamily="@font/ebrima"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="@string/nentering"
+            android:textColor="@drawable/selector_xml_leaving_text_green"
+            android:textSize="17sp"
+            tools:layout_editor_absoluteX="237dp"
+            tools:layout_editor_absoluteY="398dp" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/ebrima"
+        android:text="@string/price_per_unit"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView19"
+        app:layout_constraintEnd_toStartOf="@+id/guideline40"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/guideline36" />
+
+    <TextView
+        android:id="@+id/textView19"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/ebrima"
+        android:text="@string/quantity"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/Date"
+        app:layout_constraintEnd_toStartOf="@+id/guideline40"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrier2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="top" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline35"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.2859097" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline36"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/textView17"
+        app:layout_constraintGuide_percent="0.39"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline40"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.47" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline41"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.88" />
+
+    <Button
+        android:id="@+id/addTransactionButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/ic_update_button"
+        android:fontFamily="@font/ebrima"
+        android:text="@string/update"
+        android:textAllCaps="false"
+        android:textColor="#ffffff"
+        android:textSize="17sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toTopOf="@+id/guideline53"
+        app:layout_constraintEnd_toStartOf="@+id/guideline1"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="@+id/guideline55" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/ic_rect_ngulo_141"
+        android:fontFamily="@font/ebrima"
+        android:text="@string/cancel"
+        android:textAllCaps="false"
+        android:textColor="#0FB119"
+        android:textSize="17sp"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toTopOf="@+id/guideline56"
+        app:layout_constraintEnd_toStartOf="@+id/guideline1"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="@+id/guideline54" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline42"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.83" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline53"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.8891929" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline54"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.9124487" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline55"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.8235294" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline56"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.97811216" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.07" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.92" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

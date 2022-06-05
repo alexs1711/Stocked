@@ -1,0 +1,12 @@
+<svg id="Icons_Shopping_ic-shopping-code" data-name="Icons / Shopping / ic-shopping-code" xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50">
+  <rect id="Rectángulo_364" data-name="Rectángulo 364" width="50" height="50" fill="none"/>
+  <g id="ic-shopping-code" transform="translate(6.25 10.417)">
+    <path id="Trazado_332" data-name="Trazado 332" d="M11.333,5h-8A.333.333,0,0,0,3,5.333v8" transform="translate(-3 -5)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" fill-rule="evenodd"/>
+    <path id="Trazado_333" data-name="Trazado 333" d="M25.333,13.333v-8A.333.333,0,0,0,25,5H17" transform="translate(12.167 -5)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" fill-rule="evenodd"/>
+    <path id="Trazado_334" data-name="Trazado 334" d="M17,23.333h8A.333.333,0,0,0,25.333,23V15" transform="translate(12.167 5.833)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" fill-rule="evenodd"/>
+    <path id="Trazado_335" data-name="Trazado 335" d="M3,15v8a.333.333,0,0,0,.333.333h8" transform="translate(-3 5.833)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" fill-rule="evenodd"/>
+    <line id="Línea_444" data-name="Línea 444" y2="12.5" transform="translate(8.333 8.333)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+    <line id="Línea_445" data-name="Línea 445" y2="12.5" transform="translate(18.75 8.333)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+    <line id="Línea_446" data-name="Línea 446" y2="12.5" transform="translate(29.167 8.333)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+  </g>
+</svg>

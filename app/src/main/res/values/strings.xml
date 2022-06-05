@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Stocked</string>
+
+    <string name="language">English</string>
+    <string name="welcome">Welcome,</string>
+
+    <string name="total_sales">Total Sales</string>
+    <string name="total_cost">Total Cost</string>
+    <string name="total_items">Total Items</string>
+    <string name="total_categories">Total Categories</string>
+    <string name="balance">Balance</string>
+    <string name="search">Search</string>
+
+    <string name="add_a_new_category">Add a new Category</string>
+    <string name="category_name">Category Name*</string>
+    <string name="name">Name</string>
+    <string name="category_description">Category Description*</string>
+    <string name="description">Description</string>
+    <string name="category_image">Category Image</string>
+    <string name="add">Add</string>
+
+    <string name="item_name">Item Name*</string>
+    <string name="item_description">Item Description</string>
+    <string name="item_unity_kg_unity_liters_pounds">Item Unity (Kg/Unity/Liters/Pounds)*</string>
+    <string name="unity">Unity</string>
+    <string name="add_a_new_item">Add a new Item</string>
+    <string name="category">Category</string>
+    <string name="item_image">Item Image*</string>
+    <string name="item_barcode">Item Barcode*</string>
+    <string name="bar_qr_code_number">Bar/QR Code Number</string>
+
+    <string name="new_category">New Category</string>
+    <string name="new_item">New Item</string>
+    <string name="what_are_you_n_looking_for">What are you\n looking for?</string>
+
+    <string name="add_transaction">Add Transaction</string>
+    <string name="nleaving">\nLeaving</string>
+    <string name="nentering">\nEntering</string>
+    <string name="price_per_unit">Price per unit</string>
+    <string name="quantity">Quantity</string>
+    <string name="date">Date</string>
+    <string name="save">Save</string>
+    <string name="leave">Leave</string>
+
+    <string name="categories">Categories</string>
+    <string name="products_list">Products list</string>
+    <string name="n_of_items">№ of items</string>
+    <string name="_0">0</string>
+    <string name="categories_number">Categories №</string>
+
+    <string name="pick_a_currency">Pick a Currency ...</string>
+    <string name="update_currency">Update Currency</string>
+    <string name="Nopic">ERROR no pic selected</string>
+    <string name="uploadingImage">Uploading Image...</string>
+    <string name="UploadError">Failed to upload</string>
+    <string name="UploadedPic">Image Uploaded</string>
+    <string name="transactionAdded">Transaction added</string>
+    <string name="fillall">Please Fill all the fields</string>
+    <string name="catAdded">Category Added</string>
+    <string name="itemAdded">Item added</string>
+    <string name="addCatFirstError">You need to first add one category!.</string>
+    <string name="insertPriceError">You need to insert the price.</string>
+    <string name="insertQuantityError">You need to insert the quantity</string>
+    <string name="insertDateError">You need to select a date</string>
+    <string name="errorNumbers">It must contain numbers</string>
+    <string name="addTransaction">Transaction added</string>
+    <string name="actualCurrency">\"Actual Currency is: \"</string>
+    <string name="selectedCurrency">\"Selected Currency : \"</string>
+    <string name="updatedCurreny">\"Updated Currency to \"</string>
+    <string name="password">Password</string>
+    <string name="new_mail">New mail</string>
+    <string name="old_mail">Old mail</string>
+    <string name="confirm_old_mail">Confirm old mail</string>
+    <string name="update_mail">Update Mail</string>
+    <string name="mailsNoMatch">Mail\'s Do not Match</string>
+    <string name="emailSnackbar">\"Email Changed, Current Email is \"</string>
+    <string name="surname">Surname</string>
+    <string name="noData">no data found</string>
+    <string name="empty_name">Empty name!</string>
+    <string name="empty_surname">Empty surname!</string>
+    <string name="no_name_change">You have not changed the name!</string>
+    <string name="no_surname_change">You have not changed the name!</string>
+    <string name="updatedName">Name updated!</string>
+    <string name="snackbar_password">We have sent you instructions to reset your password!</string>
+    <string name="snacbar_failed_password">Failed to send reset email!</string>
+    <string name="press_the_button_to_receive_an_e_mail_and_proceed_with_the_password_update">Press the button to receive an e-mail and proceed with the password update.</string>
+    <string name="send_mail">Send mail</string>
+    <string name="settings">Settings</string>
+    <string name="account">Account</string>
+    <string name="change_name">Change name</string>
+    <string name="change_password">Change password</string>
+    <string name="change_mail">Change mail</string>
+    <string name="delete_account">Delete account</string>
+    <string name="currency">Currency</string>
+    <string name="preferences">Preferences</string>
+    <string name="log_out">LOG OUT</string>
+    <string name="LogoutSuccesful">LOGOUT SUCCESSFUL</string>
+    <string name="proceed_with_the_account_delete">Proceed with the account delete.</string>
+    <string name="profile_deleted">Your profile is deleted</string>
+    <string name="failed_delete_acc">Failed to delete your account!</string>
+    <string name="edit">Edit</string>
+    <string name="update">Update</string>
+    <string name="cancel">Cancel</string>
+    <string name="check_delete">Are you sure you want to delete it?</string>
+    <string name="DELETE">DELETE</string>
+    <string name="CANCEL">CANCEL</string>
+    <string name="empty_desc">Description can\'t be empty!</string>
+    <string name="update_changes">Uploaded changes</string>
+    <string name="empty_field">It\'s empty!</string>
+    <string name="progress">\"Progress: \"</string>
+    <string name="update_top">Update ????</string>
+    <string name="edit_transaction">Edit Transaction</string>
+    <string name="exception">Exception found!</string>
+    <string name="total_value">Total Value</string>
+    <string name="stock_in_hand">Stock in hand</string>
+    <string name="item_transactions">Item Transactions</string>
+    <string name="_00">00</string>
+    <string name="item_name_list">Item name list</string>
+    <string name="selected_category">Selected Category</string>
+    <string name="total_n">Total n#</string>
+    <string name="total_profit">Total Profit</string>
+    <string name="mail">Mail</string>
+    <string name="forgot_password">Forgot Password ?</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="scan_items">Scan Items</string>
+    <string name="search_items">Search Items</string>
+    <string name="register_success">Registration Success</string>
+    <string name="register_fail">Registration Failed</string>
+    <string name="not_valid_email">Not a valid email address</string>
+    <string name="need_more_length">Password is too short!</string>
+    <string name="password_dont_match">passwords do not match!</string>
+    <string name="mailNotCorrect">The mail is not correct!</string>
+    <string name="not_valid_passwd">Incorrect password</string>
+    <string name="wait">................Please Wait.............</string>
+    <string name="login_succes">Login Successful</string>
+    <string name="login_fail">Login Failed</string>
+    <string name="entering" >Entering</string>>
+    <string name="leaving">Leaving</string>
+
+
+</resources>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Stocked</string>
+
+    <string name="language">Español</string>
+    <string name="welcome">Bienvenido,</string>
+
+    <string name="total_sales">Ventas totales</string>
+    <string name="total_cost">Coste total</string>
+    <string name="total_items">Nº de Items</string>
+    <string name="total_categories">Nº de Categorias </string>
+    <string name="balance">Balance</string>
+    <string name="search">Buscar</string>
+
+    <string name="add_a_new_category">Añadir Categoría</string>
+    <string name="category_name">Nombre de la categoría*</string>
+    <string name="name">Nombre</string>
+    <string name="category_description">Descripción de la categoría*</string>
+    <string name="description">Descripción</string>
+    <string name="category_image">Imagen</string>
+    <string name="add">Añadir</string>
+
+    <string name="item_name">Nombre del item*</string>
+    <string name="item_description">Descripción del item</string>
+    <string name="item_unity_kg_unity_liters_pounds">Unidades (Kg/Unitario/Litros/Libras)*</string>
+    <string name="unity">Unidad</string>
+    <string name="add_a_new_item">Añadir Item</string>
+    <string name="category">Categoría</string>
+    <string name="item_image">Imagen*</string>
+    <string name="item_barcode">Codigo de barras*</string>
+    <string name="bar_qr_code_number">Numero codigo de barras</string>
+
+    <string name="new_category">Nueva categoría</string>
+    <string name="new_item">Nuevo Item</string>
+    <string name="what_are_you_n_looking_for">¿Qué estás<br/> buscando?</string>
+
+    <string name="add_transaction">Añadir transacción</string>
+    <string name="nleaving">\nVenta</string>
+    <string name="nentering">\nCompra</string>
+    <string name="price_per_unit">Precio por unidad</string>
+    <string name="quantity">Cantidad</string>
+    <string name="date">Fecha</string>
+    <string name="save">Guardar</string>
+    <string name="leave">Salir</string>
+
+    <string name="categories">Categorías</string>
+    <string name="products_list">Lista de categorías</string>
+    <string name="n_of_items">№ de items</string>
+    <string name="_0">0</string>
+    <string name="categories_number">№ Categorías</string>
+
+    <string name="pick_a_currency">Elige una divisa …</string>
+    <string name="update_currency">Actualizar</string>
+    <string name="Nopic">ERROR No has seleccionado ninguna foto</string>
+    <string name="uploadingImage">Subiendo Imagen…</string>
+    <string name="UploadError">Error al subir</string>
+    <string name="UploadedPic">Foto subida!</string>
+    <string name="transactionAdded">Transacción añadida</string>
+    <string name="fillall">Rellena todos los campos!</string>
+    <string name="catAdded">Categoría añadida</string>
+    <string name="itemAdded">Item añadido</string>
+    <string name="addCatFirstError">Tienes que añadir una categoría!.</string>
+    <string name="insertPriceError">Tienes que insertar el precio.</string>
+    <string name="insertQuantityError">Tienes que insertar la cantidad.</string>
+    <string name="insertDateError">Necesitas elegir una fecha</string>
+    <string name="errorNumbers">Tiene que tener solo numeros</string>
+    <string name="addTransaction">Transacción añadida</string>
+    <string name="actualCurrency">\"La moneda actual es : \"</string>
+    <string name="selectedCurrency">\"Moneda elegida : \"</string>
+    <string name="updatedCurreny">\"Moneda actualizada a \"</string>
+    <string name="password">Contraseña</string>
+    <string name="new_mail">Nuevo correo</string>
+    <string name="old_mail">Antiguo correo</string>
+    <string name="confirm_old_mail">Confirma el antiguo correo</string>
+    <string name="update_mail">Actualizar correo</string>
+    <string name="mailsNoMatch">Los correos no coinciden</string>
+    <string name="emailSnackbar">\"Correo actualizado, el correo actual es: \"</string>
+    <string name="surname">Apellido</string>
+    <string name="noData">No se ha encontrado información</string>
+    <string name="empty_name">Nombre vacio!</string>
+    <string name="empty_surname">Apellido vacio!</string>
+    <string name="no_name_change">No has cambiado el nombre!</string>
+    <string name="no_surname_change">No has cambiado el apellido!</string>
+    <string name="updatedName">Nombre actualizado!</string>
+    <string name="snackbar_password">Te hemos mandado un correo con las instrucciones!</string>
+    <string name="snacbar_failed_password">Ha fallado la actualizacion de la contraseña!</string>
+    <string name="press_the_button_to_receive_an_e_mail_and_proceed_with_the_password_update">Presione el boton para recibir un correo y así continuar con el cambio de contraseña.</string>
+    <string name="send_mail">Mandar correo</string>
+
+    <string name="settings">Configuración</string>
+    <string name="account">Cuenta</string>
+    <string name="change_name">Cambiar nombre</string>
+    <string name="change_password">Cambiar contraseña</string>
+    <string name="change_mail">Cambiar correo</string>
+    <string name="delete_account">Borrar cuenta</string>
+    <string name="currency">Moneda</string>
+    <string name="preferences">Preferencias</string>
+    <string name="log_out">Cerrar sesion</string>
+    <string name="LogoutSuccesful">Sesion cerrada</string>
+    <string name="proceed_with_the_account_delete">Proceder con el borrado de cuenta.</string>
+    <string name="profile_deleted">Tu usuario ha sido borrado</string>
+    <string name="failed_delete_acc">Error al borrar tu cuenta</string>
+    <string name="edit">Editar</string>
+    <string name="update">Actualizar</string>
+    <string name="cancel">Cancelar</string>
+    <string name="check_delete">Estas seguro de borrarlo?</string>
+    <string name="DELETE">BORRAR</string>
+    <string name="CANCEL">CANCELAR</string>
+
+    <string name="empty_desc">La descripción no puede estar vacia!</string>
+    <string name="update_changes">Cambios subidos!</string>
+    <string name="empty_field">Esta vacio!</string>
+    <string name="progress">\"Progreso: \"</string>
+    <string name="update_top">Actualizar ????</string>
+    <string name="edit_transaction">Editar Transacción</string>
+    <string name="exception">Excepcion encontrada!</string>
+    <string name="total_value">Valor total</string>
+    <string name="stock_in_hand">Stock actual</string>
+    <string name="item_transactions">Transacciones</string>
+    <string name="_00">00</string>
+    <string name="item_name_list">Lista de items</string>
+    <string name="selected_category">Categoría seleccionada</string>
+    <string name="total_n">№ total</string>
+    <string name="total_profit">Beneficio total</string>
+    <string name="mail">Mail</string>
+    <string name="forgot_password">Contraseña olvidada?</string>
+    <string name="login">Login</string>
+    <string name="register">Registrarse</string>
+    <string name="confirm_password">Confirmar contraseña</string>
+    <string name="sign_up">Registrarse</string>
+    <string name="scan_items">Buscar Items</string>
+    <string name="search_items">Busca el item</string>
+    <string name="register_success">Registrado con éxito!</string>
+    <string name="not_valid_email">Dirección de correo no valida!</string>
+    <string name="register_fail">Error al registrarse!</string>
+    <string name="need_more_length">La contraseña es muy corta!</string>
+    <string name="password_dont_match">Las contraseñas no coinciden!</string>
+    <string name="mailNotCorrect">El correo no es el correcto!</string>
+    <string name="not_valid_passwd">Contraseña incorrecta</string>
+    <string name="wait">................Por favor espere.............</string>
+    <string name="login_succes">Bienvenido!</string>
+    <string name="login_fail">Error al acceder</string>
+    <string name="entering">Compra</string>
+    <string name="leaving">Venta</string>
+
+
+</resources>
