@@ -12,3 +12,6 @@ Despues habria que pensar las tablas en las que insertar los detalles en los que
 Añadir efectos <br />
 Añadir idea apuntada en adobe xd de que salgan las ganacias y/o perdidas de cada item <br />
 Mejorar UI de acceso a la aplicacion <br />
+
+
+Integración de firebase con los items encontrados en mysql
