@@ -21,7 +21,7 @@ import com.google.firebase.auth.FirebaseAuth;
 public class LoginActivity extends AppCompatActivity {
     private EditText Email;
     private EditText Password;
-    private Button Login;
+    private TextView Login;
     private TextView passwordreset;
     private EditText passwordresetemail;
     private ProgressBar progressBar;
@@ -32,11 +32,11 @@ public class LoginActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login);
+        setContentView(R.layout.login_v2);
 
         Email = (EditText) findViewById(R.id.emailSignIn);
         Password = (EditText) findViewById(R.id.password);
-        Login = (Button) findViewById(R.id.Login);
+        Login = (TextView) findViewById(R.id.Login);
 
         passwordreset = findViewById(R.id.forgotpassword);
         passwordresetemail = findViewById(R.id.emailSignIn);
