@@ -5,7 +5,6 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.app.Dialog;
 import android.app.ProgressDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -34,11 +33,8 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.OnProgressListener;
-import com.google.firebase.storage.StorageException;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
-
-import java.util.UUID;
 
 import de.hdodenhof.circleimageview.CircleImageView;
 
@@ -72,7 +68,7 @@ public class EditCategoryActivity extends AppCompatActivity {
 
         //Ids of layout textviews and circleimageview
         EditCatTopName = findViewById(R.id.UpdateItemTopT);
-        EditCatName = findViewById(R.id.UpdateCategoryName);
+        EditCatName = findViewById(R.id.emailSignIn);
         EditDesc = findViewById(R.id.UpdateItemDescription);
         EditCatImage = findViewById(R.id.cat_upload_pic);
 

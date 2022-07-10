@@ -38,6 +38,7 @@
         <activity android:name=".ItemsActivity" />
         <activity android:name=".EditItemActivity" />
         <activity android:name=".ScanCodeActivityEdit"/>
+        <activity android:name=".ForgottenPassword"/>
         <activity
             android:name=".SplashsActivity"
             android:theme="@style/Theme.AppCompat.NoActionBar">

@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ProgressBar;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -23,13 +24,15 @@ public class RegisterActivity extends AppCompatActivity {
     private EditText  editTextEmail, editTextPassword, editTextPhone,editTextcPassword,editUserName,editUserSurname;
     public Button UserRegisterBtn;
     private ProgressBar progressBar;
+    private TextView Login;
+
 
     private FirebaseAuth mAuth;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_register);
+        setContentView(R.layout.activity_register_v1);
 
         editUserName = findViewById(R.id.NameRegister);
         editUserSurname = findViewById(R.id.SurNameRegister);
@@ -38,8 +41,9 @@ public class RegisterActivity extends AppCompatActivity {
         editTextPassword = findViewById(R.id.passwordRegister);
         editTextcPassword= findViewById(R.id.confirmPassword);
         UserRegisterBtn= findViewById(R.id.button_register);
+        Login = findViewById(R.id.loginbt);
 //        editTextPhone = findViewById(R.id.edit_text_phone);
-        progressBar = findViewById(R.id.progressbar);
+        progressBar = findViewById(R.id.progressbarr);
         progressBar.setVisibility(View.GONE);
 
         mAuth = FirebaseAuth.getInstance();
@@ -51,6 +55,15 @@ public class RegisterActivity extends AppCompatActivity {
             public void onClick(View v) {
                 registerUser();
             }
+        });
+
+        Login.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+                startActivity(new Intent(RegisterActivity.this,LoginActivity.class));
+            }
+
         });
 
 
@@ -197,7 +210,7 @@ public class RegisterActivity extends AppCompatActivity {
     @Override
     public void onBackPressed() {
         super.onBackPressed();
-        startActivity(new Intent(RegisterActivity.this,MainActivity.class));
+        startActivity(new Intent(RegisterActivity.this,LoginActivity.class));
         finish();
     }
     //    //Set UserDisplay Name

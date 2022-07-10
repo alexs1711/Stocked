@@ -21,9 +21,10 @@ import com.google.firebase.auth.FirebaseAuth;
 public class LoginActivity extends AppCompatActivity {
     private EditText Email;
     private EditText Password;
-    private TextView Login;
+    private Button Login;
     private TextView passwordreset;
-    private EditText passwordresetemail;
+    private TextView Register;
+
     private ProgressBar progressBar;
 
     private FirebaseAuth auth;
@@ -32,14 +33,14 @@ public class LoginActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.login_v2);
+        setContentView(R.layout.login_v3);
 
         Email = (EditText) findViewById(R.id.emailSignIn);
         Password = (EditText) findViewById(R.id.password);
-        Login = (TextView) findViewById(R.id.Login);
+        Login = (Button) findViewById(R.id.Login);
+        Register = (TextView) findViewById(R.id.registerbt);
 
         passwordreset = findViewById(R.id.forgotpassword);
-        passwordresetemail = findViewById(R.id.emailSignIn);
         progressBar = (ProgressBar) findViewById(R.id.progressbars);
         progressBar.setVisibility(View.GONE);
         auth = FirebaseAuth.getInstance();
@@ -58,35 +59,23 @@ public class LoginActivity extends AppCompatActivity {
         passwordreset.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                resetpasword();
+                startActivity(new Intent(LoginActivity.this,ForgottenPassword.class));
+                finish();
+            }
+        });
+
+        Register.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(LoginActivity.this,RegisterActivity.class));
+                finish();
             }
         });
     }
 
-    public void resetpasword(){
-        final String resetemail = passwordresetemail.getText().toString();
 
-        if (resetemail.isEmpty()) {
-            passwordresetemail.setError(getString(R.string.empty_field));
-            passwordresetemail.requestFocus();
-            return;
-        }
-        progressBar.setVisibility(View.VISIBLE);
-        auth.sendPasswordResetEmail(resetemail)
 
-                .addOnCompleteListener(new OnCompleteListener<Void>() {
-                    @Override
-                    public void onComplete(@NonNull Task<Void> task) {
-                        if (task.isSuccessful()) {
-                            Toast.makeText(LoginActivity.this, getString(R.string.snackbar_password), Toast.LENGTH_SHORT).show();
-                        } else {
-                            Toast.makeText(LoginActivity.this, getString(R.string.snacbar_failed_password), Toast.LENGTH_SHORT).show();
-                        }
 
-                        progressBar.setVisibility(View.GONE);
-                    }
-                });
-    }
 
 
 
@@ -133,7 +122,7 @@ public class LoginActivity extends AppCompatActivity {
     @Override
     public void onBackPressed() {
         super.onBackPressed();
-        startActivity(new Intent(LoginActivity.this,MainActivity.class));
+        //startActivity(new Intent(LoginActivity.this,MainActivity.class));
         finish();
     }
 }

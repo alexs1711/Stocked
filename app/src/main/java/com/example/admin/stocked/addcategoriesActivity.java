@@ -67,7 +67,7 @@ public class addcategoriesActivity extends AppCompatActivity implements View.OnC
         users = firebaseAuth.getCurrentUser();
         userUID = users.getUid();
 
-        itemcategory = findViewById(R.id.UpdateCategoryName);
+        itemcategory = findViewById(R.id.emailSignIn);
         categorydescription = findViewById(R.id.UpdateItemDescription);
         addCat = (Button) findViewById(R.id.addcategorybuttontodatabase);
 

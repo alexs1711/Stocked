@@ -10,17 +10,13 @@
 
     <ImageView
         android:id="@+id/imageView3"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="362dp"
+        android:layout_height="181dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        app:layout_constraintBottom_toTopOf="@+id/UpdateItemTop"
-        app:layout_constraintDimensionRatio="1.5"
         app:layout_constraintEnd_toStartOf="@+id/guideline75"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="@+id/guideline74"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_chainStyle="spread"
+        app:layout_constraintTop_toTopOf="@+id/guideline80"
         app:srcCompat="@drawable/ic_launcher_foreground" />
 
     <TextView
@@ -29,71 +25,78 @@
         android:layout_height="wrap_content"
         android:layout_alignBottom="@+id/imageView3"
         android:layout_centerHorizontal="true"
-        android:fontFamily="sans-serif-black"
+        android:fontFamily="@font/montserrat"
         android:text="@string/app_name"
         android:textColor="#FFFFFF"
-        android:textSize="45sp"
+        android:textSize="34sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/SignUpMain"
         app:layout_constraintEnd_toStartOf="@+id/guideline75"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="@+id/guideline74"
         app:layout_constraintTop_toBottomOf="@+id/imageView3" />
 
     <Button
         android:id="@+id/LoginButtonMain"
-        android:layout_width="0dp"
+        android:layout_width="362dp"
         android:layout_height="40dp"
         android:layout_alignBottom="@+id/UpdateItemTop"
         android:layout_centerInParent="true"
-        android:background="#11000000"
-        android:drawableLeft="@drawable/ic_person_login"
+        android:background="#00000000"
         android:hint="@string/login"
         android:onClick="login"
         android:textColorHint="#ffff"
         android:textSize="18dp"
         app:layout_constraintBottom_toTopOf="@+id/guideline76"
         app:layout_constraintEnd_toStartOf="@+id/guideline75"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="@+id/guideline74"
-        app:layout_constraintTop_toBottomOf="@+id/SignUpMain" />
+        app:layout_constraintStart_toStartOf="@+id/guideline74" />
 
     <Button
         android:id="@+id/SignUpMain"
-        android:layout_width="0dp"
+        android:layout_width="362dp"
         android:layout_height="40dp"
         android:layout_alignBottom="@+id/LoginButtonMain"
         android:layout_centerHorizontal="true"
-        android:background="#11000000"
-        android:drawableLeft="@drawable/ic_person_register"
+        android:background="@color/colorPrimary"
         android:hint="@string/register"
         android:onClick="register"
         android:textColorHint="#FFFF"
         android:textSize="18dp"
         app:layout_constraintBottom_toTopOf="@+id/LoginButtonMain"
         app:layout_constraintEnd_toStartOf="@+id/guideline75"
-        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="@+id/guideline74"
-        app:layout_constraintTop_toBottomOf="@+id/UpdateItemTop" />
+        app:layout_constraintTop_toTopOf="@+id/guideline79" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline74"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.25" />
+        app:layout_constraintGuide_percent="0.06" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline75"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_percent="0.75" />
+        app:layout_constraintGuide_percent="0.94" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline76"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.85" />
+        app:layout_constraintGuide_percent="0.93" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline79"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.77" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline80"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.08" />
 </androidx.constraintlayout.widget.ConstraintLayout>

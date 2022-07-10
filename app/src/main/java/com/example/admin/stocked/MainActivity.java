@@ -13,7 +13,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        //setContentView(R.layout.activity_main);
         auth = FirebaseAuth.getInstance();
 
         FirebaseUser user = auth.getCurrentUser();
@@ -21,27 +21,14 @@ public class MainActivity extends AppCompatActivity {
         if(user != null){
             finish();
             startActivity(new Intent(this, activity_dashboard.class));
+            overridePendingTransition(0,0);
+        }
+        else {
+            finish();
+            startActivity(new Intent(this,LoginActivity.class));
+            overridePendingTransition(0,0);
         }
 
-    }
-
-
-    public void login (View view)
-    {
-
-        startActivity(new Intent(this,LoginActivity.class));
-        finish();
-//        String TextClassname = classname.getText().toString();
-//        // starting our intent
-//        Intent classintent = new Intent(this,SecondActivity.class);
-//        classintent.putExtra("Classname",TextClassname);
-//        startActivityForResult(classintent,request_code);
-    }
-    public void register (View view)
-    {
-
-        startActivity(new Intent(this,RegisterActivity.class));
-        finish();
     }
 }
 

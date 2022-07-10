@@ -38,13 +38,13 @@
         android:textColor="#827474"
         android:textSize="15sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/UpdateCategoryName"
+        app:layout_constraintBottom_toTopOf="@+id/emailSignIn"
         app:layout_constraintStart_toStartOf="@+id/guideline"
         app:layout_constraintTop_toBottomOf="@+id/UpdateItemTopT" />
 
 
     <EditText
-        android:id="@+id/UpdateCategoryName"
+        android:id="@+id/emailSignIn"
         android:layout_width="0dp"
         android:layout_height="30dp"
         android:layout_centerHorizontal="true"
@@ -100,7 +100,7 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/UpdateItemDescription"
         app:layout_constraintStart_toStartOf="@+id/guideline"
-        app:layout_constraintTop_toBottomOf="@+id/UpdateCategoryName" />
+        app:layout_constraintTop_toBottomOf="@+id/emailSignIn" />
 
     <EditText
         android:id="@+id/UpdateItemDescription"
